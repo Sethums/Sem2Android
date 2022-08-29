@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.UserLogin" parent="android:Theme.Material.Light">
+        <!-- Primary brand color. -->
+
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.UserLogin.NoActionBar"></style>
+
+    <style name="Theme.UserLogin.AppBarOverlay" parent="android:Theme.Material.Light" />
+
+    <style name="Theme.UserLogin.PopupOverlay" parent="android:Theme.Material.Light" />
+</resources>
