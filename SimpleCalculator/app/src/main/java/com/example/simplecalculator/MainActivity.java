@@ -13,7 +13,7 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import com.example.simplecalculator.databinding.ActivityMainBinding;
+
 
 import android.view.Menu;
 import android.view.MenuItem;
@@ -34,11 +34,12 @@ TextView resulttxt;
     }
 
     public void Calculate(View view) {
-int number1,number2,sum,sub,prod,quot;
+double number1,number2;
+double sum,sub,prod,quot;
 num1=(EditText) findViewById(R.id.num1);
 num2=(EditText) findViewById(R.id.num2);
-        number1 = Integer.parseInt(num1.getText().toString());
-        number2 = Integer.parseInt(num2.getText().toString());
+        number1 = Double.parseDouble(num1.getText().toString());
+        number2 = Double.parseDouble(num2.getText().toString());
         resulttxt=(TextView) findViewById(R.id.result);
         if (view.getId()==R.id.add){
             sum=number1+number2;
@@ -55,6 +56,11 @@ num2=(EditText) findViewById(R.id.num2);
         if (view.getId()==R.id.div){
             quot=number1/number2;
             resulttxt.setText(Double.toString(quot));
+        }
+        if (view.getId()==R.id.clr){
+num1.setText("");
+num2.setText("");
+            resulttxt.setText("");
         }
     }
 }
