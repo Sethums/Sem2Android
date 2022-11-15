@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Library Management</string>
+    <string name="add">Add Book</string>
+    <string name="all">View All</string>
+    <string name="one">View One</string>
+    <string name="did">Get Book Id</string>
+    <string name="update">Update Book</string>
+    <string name="del">Remove Book</string>
+
+</resources>
